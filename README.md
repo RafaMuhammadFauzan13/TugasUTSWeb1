@@ -12,8 +12,8 @@
 | **Program Studi** | *Teknik Informatika* |
 | **Mata Kuliah** | Pemrograman Web |
 | **Tugas** | UTS — Website Toko Buku Lentera |
-| **Link Repository** | *(tempel link GitHub, status Public)* |
-| **Link YouTube** | *(tempel link video YouTube, status Public)* |
+| **Link Repository** | *https://github.com/RafaMuhammadFauzan13/TugasUTSWeb1.git* |
+| **Link YouTube** | *https://youtu.be/0JtJS40OuJw?si=D807603Y9XcUdE2O* |
 
 ---
 
@@ -1065,7 +1065,7 @@ Kelas seperti `.modal.terbuka` dan `.lencana.rendah` dipasang oleh JavaScript, s
 
 Video penjelasan project dan demo seluruh proses di atas:
 
-**(tempel link YouTube di sini)**
+**https://youtu.be/0JtJS40OuJw?si=D807603Y9XcUdE2O**
 
 ## Kesimpulan
 
