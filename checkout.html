@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Pemesanan - Toko Buku Lentera</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Literata:wght@500;700&family=Public+Sans:wght@400;600&display=swap">
+<link rel="icon" href="assets/favicon.png">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body data-halaman="checkout">
+<header class="topbar">
+  <a class="brand" href="dashboard.html"><img src="assets/logo.png" alt="" width="32" height="32">Toko Buku Lentera</a>
+  <nav aria-label="Menu utama">
+    <a href="dashboard.html">Dashboard</a>
+    <a href="stok.html">Katalog</a>
+    <a href="checkout.html" aria-current="page">Pemesanan</a>
+    <a href="tracking.html">Tracking</a>
+    <a href="riwayat.html">Riwayat</a>
+  </nav>
+  <button class="btn kecil sekunder" id="btnLogout" style="color:#fff;border-color:#fff">Keluar</button>
+</header>
+<main>
+  <h1>Pemesanan Buku</h1>
+  <section class="card" aria-labelledby="hItem">
+    <h2 id="hItem">Data pesanan</h2>
+    <div class="baris">
+      <div><label for="pilihBuku">Buku</label><select id="pilihBuku"></select></div>
+      <div><label for="jumlah">Jumlah</label><input type="number" id="jumlah" min="1" value="1"></div>
+      <div style="align-self:end"><button class="btn" id="btnTambah" type="button">Tambah ke pesanan</button></div>
+    </div>
+    <div class="tabel-bungkus"><table>
+      <thead><tr><th>Judul</th><th class="angka">Harga</th><th>Jumlah</th><th class="angka">Subtotal</th><th>Aksi</th></tr></thead>
+      <tbody id="tbKeranjang"></tbody>
+    </table></div>
+  </section>
+  <section class="card" aria-labelledby="hPemesan">
+    <h2 id="hPemesan">Data pemesan dan pembayaran</h2>
+    <form id="formPesan" novalidate>
+      <div class="baris">
+        <div><label for="nama">Nama pemesan</label><input id="nama"><span class="galat"></span></div>
+        <div><label for="telepon">No. telepon</label><input id="telepon" placeholder="08123456789"><span class="galat"></span></div>
+      </div>
+      <label for="alamat">Alamat pengiriman</label><textarea id="alamat" rows="2"></textarea><span class="galat"></span>
+      <div class="baris">
+        <div><label for="ekspedisi">Ekspedisi</label><select id="ekspedisi"><option value="">Pilih ekspedisi</option><option value="JNE" data-ongkir="15000">JNE (Rp 15.000)</option><option value="J&amp;T Express" data-ongkir="14000">J&amp;T Express (Rp 14.000)</option><option value="Pos Indonesia" data-ongkir="12000">Pos Indonesia (Rp 12.000)</option></select><span class="galat"></span></div>
+        <div><label for="paket">Jenis paket</label><select id="paket"><option value="Reguler">Reguler</option><option value="Ekspres">Ekspres</option></select></div>
+        <div><label for="metode">Pembayaran</label><select id="metode"><option value="">Pilih metode</option><option>Transfer Bank</option><option>E-Wallet</option><option>COD</option></select><span class="galat"></span></div>
+      </div>
+      <div class="ringkas"><span>Subtotal <strong id="subtotal">Rp 0</strong></span><span>Ongkir <strong id="ongkir">Rp 0</strong></span><span>Total <strong id="total">Rp 0</strong></span></div>
+      <button class="btn" type="submit">Buat pesanan</button>
+    </form>
+  </section>
+</main>
+<footer><p>&copy; 2026 Toko Buku Lentera - Tugas UTS Pemrograman Web 1</p></footer>
+<script src="js/data.js"></script>
+<script src="js/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Riwayat - Toko Buku Lentera</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Literata:wght@500;700&family=Public+Sans:wght@400;600&display=swap">
+<link rel="icon" href="assets/favicon.png">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body data-halaman="riwayat">
+<header class="topbar">
+  <a class="brand" href="dashboard.html"><img src="assets/logo.png" alt="" width="32" height="32">Toko Buku Lentera</a>
+  <nav aria-label="Menu utama">
+    <a href="dashboard.html">Dashboard</a>
+    <a href="stok.html">Katalog</a>
+    <a href="checkout.html">Pemesanan</a>
+    <a href="tracking.html">Tracking</a>
+    <a href="riwayat.html" aria-current="page">Riwayat</a>
+  </nav>
+  <button class="btn kecil sekunder" id="btnLogout" style="color:#fff;border-color:#fff">Keluar</button>
+</header>
+<main>
+  <h1>History Transaksi</h1>
+  <section class="card"><div class="ringkas" style="justify-content:flex-start"><span>Jumlah transaksi <strong id="jmlTrx">0</strong></span><span>Total nilai <strong id="nilaiTrx">Rp 0</strong></span></div></section>
+  <section class="card"><div class="tabel-bungkus"><table>
+    <thead><tr><th>No. DO</th><th>Tanggal kirim</th><th>Pemesan</th><th>Ekspedisi</th><th class="angka">Total</th><th>Status</th></tr></thead>
+    <tbody id="tbRiwayat"></tbody>
+  </table></div></section>
+</main>
+<footer><p>&copy; Toko Buku Lentera - Tugas UTS Pemrograman Web 1</p></footer>
+<script src="js/data.js"></script>
+<script src="js/script.js"></script>
+</body>
+</html>

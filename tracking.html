@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Tracking - Toko Buku Lentera</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Literata:wght@500;700&family=Public+Sans:wght@400;600&display=swap">
+<link rel="icon" href="assets/favicon.png">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body data-halaman="tracking">
+<header class="topbar">
+  <a class="brand" href="dashboard.html"><img src="assets/logo.png" alt="" width="32" height="32">Toko Buku Lentera</a>
+  <nav aria-label="Menu utama">
+    <a href="dashboard.html">Dashboard</a>
+    <a href="stok.html">Katalog</a>
+    <a href="checkout.html">Pemesanan</a>
+    <a href="tracking.html" aria-current="page">Tracking</a>
+    <a href="riwayat.html">Riwayat</a>
+  </nav>
+  <button class="btn kecil sekunder" id="btnLogout" style="color:#fff;border-color:#fff">Keluar</button>
+</header>
+<main>
+  <h1>Informasi Pengiriman</h1>
+  <section class="card">
+    <form id="formTrack" novalidate>
+      <label for="noDO">Nomor Delivery Order</label>
+      <div style="display:flex;gap:.6rem"><input id="noDO" placeholder="20230012" inputmode="numeric"><button class="btn" type="submit">Cari</button></div>
+      <span class="galat" id="galatDO"></span>
+    </form>
+  </section>
+  <section class="card" id="hasil" hidden aria-live="polite">
+    <h2>Pesanan <span data-f="nomorDO"></span></h2>
+    <div class="bar" role="progressbar" aria-valuemin="0" aria-valuemax="100"><div id="isiBar"></div></div>
+    <ol class="langkah" id="langkah"></ol>
+    <p><span class="lencana" id="lencanaStatus"></span></p>
+    <dl>
+      <dt>Nama pemesan</dt><dd data-f="nama"></dd>
+      <dt>Ekspedisi</dt><dd data-f="ekspedisi"></dd>
+      <dt>Tanggal kirim</dt><dd data-f="tanggalKirim"></dd>
+      <dt>Jenis paket</dt><dd data-f="paket"></dd>
+      <dt>Total pembayaran</dt><dd data-f="total"></dd>
+    </dl>
+    <h3 style="margin-top:1.2rem">Perjalanan paket</h3>
+    <ol class="garis-waktu" id="perjalanan"></ol>
+  </section>
+</main>
+<footer><p>&copy; 2026 Toko Buku Lentera - Tugas UTS Pemrograman Web 1</p></footer>
+<script src="js/data.js"></script>
+<script src="js/script.js"></script>
+</body>
+</html>

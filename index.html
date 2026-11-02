@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Masuk - Toko Buku Lentera</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Literata:wght@500;700&family=Public+Sans:wght@400;600&display=swap">
+<link rel="icon" href="assets/favicon.png">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body class="login-body" data-halaman="login">
+<aside class="rak">
+  <div class="punggung" aria-hidden="true">
+    <i style="height:100%;background:#0f766e"></i><i style="height:78%;background:#7c3aed"></i><i style="height:92%;background:#b45309"></i><i style="height:64%;background:#be185d"></i><i style="height:85%;background:#1d4ed8"></i><i style="height:70%;background:#15803d"></i>
+  </div>
+  <img src="assets/logo.png" alt="Logo Toko Buku Lentera" width="72" height="72"><h1>Toko Buku Lentera</h1>
+  <p>Pesan buku, cek stok, dan lacak kiriman dari satu tempat.</p>
+</aside>
+<main class="form-login">
+  <h2>Masuk ke akun</h2>
+  <form id="formLogin" novalidate>
+    <label for="email">Email</label>
+    <input type="email" id="email" autocomplete="username" placeholder="nama@gmail.com">
+    <span class="galat" id="galatEmail"></span>
+    <label for="password">Kata sandi</label>
+    <input type="password" id="password" autocomplete="current-password" placeholder="">
+    <span class="galat" id="galatPassword"></span>
+    <button class="btn" type="submit" style="width:100%;margin-top:.8rem">Login</button>
+  </form>
+  <div class="aksi-bawah">
+    <button class="tautan" id="btnLupa" type="button">Lupa Password</button>
+    <button class="tautan" id="btnDaftar" type="button">Daftar</button>
+  </div>
+</main>
+
+<div class="modal" id="modalLupa" role="dialog" aria-modal="true" aria-labelledby="jLupa">
+  <form class="modal-box" id="formLupa" novalidate>
+    <h2 id="jLupa">Lupa password</h2>
+    <p>Masukkan email terdaftar. Kami kirim tautan untuk mengatur ulang kata sandi.</p>
+    <label for="emailLupa">Email</label>
+    <input type="email" id="emailLupa">
+    <span class="galat" id="galatLupa"></span>
+    <div class="aksi"><button type="button" class="btn sekunder" data-tutup>Batal</button><button class="btn" type="submit">Kirim tautan</button></div>
+  </form>
+</div>
+
+<div class="modal" id="modalDaftar" role="dialog" aria-modal="true" aria-labelledby="jDaftar">
+  <form class="modal-box" id="formDaftar" novalidate>
+    <h2 id="jDaftar">Buat akun baru</h2>
+    <label for="dNama">Nama lengkap</label><input id="dNama"><span class="galat"></span>
+    <label for="dEmail">Email</label><input type="email" id="dEmail"><span class="galat"></span>
+    <label for="dPass">Kata sandi (min. 6 karakter)</label><input type="password" id="dPass"><span class="galat"></span>
+    <div class="aksi"><button type="button" class="btn sekunder" data-tutup>Batal</button><button class="btn" type="submit">Daftar</button></div>
+  </form>
+</div>
+<script src="js/data.js"></script>
+<script src="js/script.js"></script>
+</body>
+</html>

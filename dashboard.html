@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Dashboard - Toko Buku Lentera</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Literata:wght@500;700&family=Public+Sans:wght@400;600&display=swap">
+<link rel="icon" href="assets/favicon.png">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body data-halaman="dashboard">
+<header class="topbar">
+  <a class="brand" href="dashboard.html"><img src="assets/logo.png" alt="" width="32" height="32">Toko Buku Lentera</a>
+  <nav aria-label="Menu utama">
+    <a href="stok.html">Katalog</a>
+    <a href="checkout.html">Pemesanan</a>
+    <a href="tracking.html">Tracking</a>
+    <a href="riwayat.html">Riwayat</a>
+  </nav>
+  <button class="btn kecil sekunder" id="btnLogout" style="color:#fff;border-color:#fff">Keluar</button>
+</header>
+<main>
+  <section aria-labelledby="salam">
+    <h1 class="salam" id="salam">Halo</h1>
+    <p id="tanggal"></p>
+  </section>
+  <section aria-label="Menu utama">
+    <div class="menu">
+      <a href="stok.html" style="background:#0f766e"><strong>Informasi Stok / Katalog</strong><span>Lihat dan tambah stok buku.</span></a>
+      <a href="checkout.html" style="background:#b45309"><strong>Laporan Pemesanan</strong><span>Buat dan ubah pesanan buku.</span></a>
+      <a href="tracking.html" style="background:#7c3aed"><strong>Tracking Pengiriman</strong><span>Lacak pesanan dengan nomor DO.</span></a>
+      <a href="riwayat.html" style="background:#1d4ed8"><strong>History Transaksi</strong><span>Daftar semua transaksi.</span></a>
+    </div>
+  </section>
+</main>
+<footer><p>&copy; 2026 Toko Buku Lentera - Tugas UTS Pemrograman Web 1</p></footer>
+<script src="js/data.js"></script>
+<script src="js/script.js"></script>
+</body>
+</html>
